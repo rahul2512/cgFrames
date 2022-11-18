@@ -1,0 +1,19 @@
+
+     **************************************               **************
+     **** CURVES+ Version 2.8nc 10/2015 ***               *  30 Sep 19 *
+     **************************************               **************
+
+
+  FILE : A.pdb                             FTOP :                                 
+  LIS  :                                   LIB  : standard                        
+  lig  :                                   ibld :                                 
+  sol  :                                   back : P                               
+
+  wback :  2.90  wbase :  3.50
+
+  isym  :     1  itst  :     0  itnd  :     0  itdel :     1  itbkt :     0
+  naxlim:     0
+
+  circ  :     F  line  :     F  zaxe  :     F  fit   :     T  test  :     F
+  ions  :     F  refo  :     F  roc   :     F  axfrm :     F  FRAMES:     T
+

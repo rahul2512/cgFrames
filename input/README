@@ -1,0 +1,23 @@
+ ./curveplus_run.sh B_Seq1.pdb huh huh
+
+1 oct 2019
+Now, the ideal coordinates are fine and the code only works for nc format. 
+tested well 
+Althogh there is some spacing difference in the curve+ format and cgFrame format. 
+
+There are two idel base file : ideal_base.txt which correponds to rotated version of curve_ coordintes and
+then there is ideal_bases_Tsukuba.txt which are tsukuba coordinates. 
+
+ALso, remember in PDB format or in general always give the proper full PDB file..
+use this code to add atom type ...
+Also, remove all TER and END before this
+import pandas as pd
+pdb = pd.read_csv('2r1j_H.pdb', delim_whitespace=True,header=None)
+
+
+Here is the thing: 
+When you fit frame in Phosphate: it requires 5 atoms, namely, OP1, OP2, P, O5', and O3'. 
+So, for example, if you want to fit the frame in nth phosphate, then OP1, OP2, P, and O5' should come from nucleotide nth in contrast O3' comes from nucleotide n-1. (see picture below) 
+I am bit worried about this as this bug as phosphates variables are large and this might get unnoticed. Could you please confirm this? I am sure you are doing it correctly, I am just a bit paranoid. Sorry for the trouble. 
+Have a look at this picture below. 
+

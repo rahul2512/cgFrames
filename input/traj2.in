@@ -1,0 +1,3 @@
+parm Seq_2.2.top
+trajin Seq_2.2.pdb
+trajout Seq_2.2.nc
